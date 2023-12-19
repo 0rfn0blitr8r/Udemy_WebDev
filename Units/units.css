@@ -1,0 +1,33 @@
+section{
+	background-color: #fabd2f;
+	width: 800px;
+	height: 800px;
+	display: flex;
+	align-items: center; /*vertically aligns items*/
+	justify-content: center; /*horizontally aligns items*/
+}
+div{
+	background-color: #fe8019;
+	width: 80%;
+	height: 80%;
+}
+
+h1{
+	font-size: 2em; /*1 em is the font-size of parent element*/
+	border: 2px solid black;
+	line-height: 200%;
+}
+
+#ems{
+	font-size: 30px;
+}
+
+button{
+	font-size: 2em;
+	padding: 0 2em;
+	border-radius: 1em;
+}
+
+ul{
+	font-size: 5rem; /*nesting occurs in the multi level ul, font changes exponentially*/
+}

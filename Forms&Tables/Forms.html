@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms Demo</title>
+</head>
+<body>
+	<h1><u>Forms Demo</u></h1>
+	
+	<form action="/home/_0rfn0blitr8r/Documents/Personal/WebDev_BootCamp/test.html">
+		<button type="button">Button which doesn't submit the form</button>
+		<p>
+		<label for="username">Enter Username</label>
+		<input type="text" required placeholder="username" name="username" id="username" minlength="3" maxlength="20">
+		</p>
+		
+		<p>
+		<label>Enter Password</label>
+		<input type="password" placeholder="password" name="password" id="password" minlength="2" maxlength="20" required>
+		</p>
+
+		<!--Another approach-->
+		<p>
+			<label>
+				Enter a number:
+				<input type="number" min="0" max="420" step="3" value="69" placeholder="Enter a number">
+			</label>
+		</p>
+
+		<p>
+			<button>Submit</button>
+		</p>
+
+		<!--Upon 'submitting', url becomes 'file:///home/_0rfn0blitr8r/Documents/Personal/WebDev_BootCamp/test.html?username=0rfn0blitr8r&password=&cheese=on'-->
+	
+		<!--another way to make a button is to use the <input>-->
+		<input type="button" value="Click Me!!!!">
+	</form>
+
+	<p>
+		<button>Outside the form, does nothing</button>
+	</p>
+
+	<h2>Hijacking search mechanisms</h2>
+	<h3>Reddit</h3>
+	<p>
+		<form action="https://www.reddit.com/search">
+			<input type="text" name="q" placeholder="Search Reddit">
+			<button>Reddit</button>
+		</form>
+	</p>
+	<h3>Google</h3>
+	<p>
+		<form action="https://www.google.com/search">
+			<input type="text" name="q" placeholder="Search google">
+			<button>Google</button>
+		</form>
+	</p>
+	<h3>youtube</h3>
+	<p>
+		<form action="https://www.youtube.com/results">
+			<input type="text" name="search_query" placeholder="Search youtube">
+			<button>YouTube</button>
+		</form>
+	</p>
+
+	<h2>More Inputs</h2>
+	<p>
+		<form action="/inputs_in_forms">
+			<label for="agree">I agree to everything</label>
+			<input type="checkbox" name="agree to" id="agree">
+			<p>
+				<!--radio buttons ke collection main se only one allowed-->
+				<!--checkboxes main multiple allowed-->
+				<!--upon submit, 'value' is passed for the radio-->
+				<label for="xs">XS</label>
+				<input type="radio" name="size" id="xs" value="extra small">
+
+				<label for="s">S</label>				
+				<input type="radio" name="size" id="s" value="small">
+				
+				<label for="m">M</label>
+				<input type="radio" name="size" id="m" value="medium">
+			</p>
+
+			<p>
+				<label for="meal">Please Select an Entry</label>
+				<select name="meal" id="meal">
+					<option value="">Please Select meal of your choice</option>
+					<option value="chicken">Butter Chicken</option>
+					<option value="Steak">Medium Rare Steak</option>
+					<option value="Fish">Fish and Chips</option>
+				</select>
+				
+			</p>
+
+			<!--range return a %age between the min-max level-->
+			<p>
+				<label for="quality">Please enter your age</label>
+				<input  type="range" id="age" name="satisfaction-level" value="20" min="dis-satisfied" max="very-satisfied" step="20">
+			</p>
+			
+			<p>
+				<label for="request">Tell us your request</label>
+				<textarea id="request" name="plea" rows="5" cols="35" required></textarea>
+			</p>
+
+			<p>
+				<label for="email">Enter email</label>
+				<input type="email" name="email" id="email" required>
+			</p>
+			
+			<p>
+				<label for="url">Enter contact url</label>
+				<input type="url" name="url" id="url" required>
+			</p>
+
+			<p>
+				<button>Submit</button>
+			</p>
+
+		</form>
+	</p>
+
+
+
+
+</body>
+</html>

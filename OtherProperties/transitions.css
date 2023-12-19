@@ -1,0 +1,63 @@
+body{
+	background-color:#ebdbb2; 
+}
+
+.circle{
+	background-color:#272822;
+	height: 300px;
+	width: 300px;
+	transition: background-color 2s, border-radius 2s;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4em;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color:#fe8019;
+}
+
+.circle:hover{
+	background-color: #fb8019;
+	border-radius: 50%;
+	color: #282828
+}
+
+section{
+	display: inline-block;
+}
+
+section div{
+	color: #fb8019;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100px;
+	width: 100px;
+	background-color: #272822;
+	margin: 20px 0;
+	/* display: inline-block; */
+	transition: margin-left 2s, background-color 2s, border-radius 2s, color 2s;
+}
+
+section:hover div{
+	margin-left: 500px;
+	background-color: #fb8019;
+	border-radius: 50%;
+	color:#272822;
+}
+
+div:nth-of-type(1){
+	transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+	transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+	transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+	transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}

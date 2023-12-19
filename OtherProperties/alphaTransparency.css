@@ -1,0 +1,17 @@
+section{
+	font-size: 40px;
+}
+
+#point1alpha{
+	font-size: 0.5em;
+	background-color: rgba(251,73,52, 0.1);
+}
+#point5alpha{
+	font-size: 1em;
+	background-color: rgba(251,73,52, 0.5);
+}
+
+#fullalpha{
+	font-size: 1.5em;
+	background-color: rgba(251,73,52, 1);
+}

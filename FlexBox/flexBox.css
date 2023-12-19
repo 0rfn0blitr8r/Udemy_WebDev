@@ -1,0 +1,60 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+	text-align: center;
+}
+#container{
+	background-color: #003049;
+	width:90%;
+	/* height:500px; */
+	margin: 0 auto;
+	border: 5px solid #003049;
+	display: flex;
+	justify-content: center;
+	/* justify-content: space-around; */
+	/* justify-content: space-between; */
+	/* justify-content: space-evenly; */
+	/* justify-content:flex-start; */
+	/* align-items: center; */
+	/* flex-direction: row; */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column; */
+	flex-direction: row;
+	/* flex-direction: column-reverse; */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+	/* align-items: flex-start; */
+}
+
+#container div{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	flex-basis: 600px;
+	flex-grow: 1 ;
+}
+
+/*
+default flex dirn is 'row' so hori (l->r) main | vert cross
+							hori(main) has justify-content
+							vert(cross) has align-items
+
+		for flex dirn = 'column': vert main | hori cross and acc changes
+*/
+div:nth-of-type(1){
+	flex-shrink: 2; /*shrinks twice as fast as others*/
+}
+
+div:nth-of-type(5){
+	flex-grow: 2;
+	flex-shrink: 0; /*it just won't shrink*/
+}
+
+/* div:nth-of-type(2){
+	align-self: center;
+}
+
+div:nth-of-type(3){
+	align-self:flex-end;
+} */

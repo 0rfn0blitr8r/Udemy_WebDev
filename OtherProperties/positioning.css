@@ -1,0 +1,39 @@
+div{
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	border: 1px solid black;
+	background-color: #458588;
+}
+
+#mid{
+	background-color: aquamarine;
+}
+
+#static #mid{
+	position: static;
+	top: 10px;	
+}
+
+#relative #mid{
+	position: relative;
+	top: 40px; /*offset of 100px from top, from where it should relatively be*/
+	left: 40px;
+}
+
+#absolute{
+	position: relative;
+}
+
+#absolute #mid{
+	position: absolute; /*absolutes have offsets from their relative to its parent*/
+	top: 47px;
+	left: 40px
+}
+
+#fixed #mid{
+	/*used in nav bars*/
+	position: fixed; /*pos relative to initial cont is fixed, you scroll through the section, no change in pos on screen*/
+	top: 100px;
+	left: 500px;
+}

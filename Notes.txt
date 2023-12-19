@@ -1,0 +1,69 @@
+<! skdjfhskjdfh -->				//is the way to add a elements fit al
+Inline elements: fit alongside elements
+Block elements: take up a whole block of elements
+
+Spans & Divs:
+	Div (block type): "Content Division Elements"
+		<div>(...)</div> : groups the stuff  (...) together and makes a block
+		we can then style it as a block using css
+	
+	Span (Inline element): 
+		<span>(...)</span> makes (...) a span element
+
+<hr> (no </hr>) : Horizontal Rule element
+<br> (no </br>) : Break element
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<div></div> : used to block up stuff
+##used to categorize content in a webpage
+##is a generic container
+
+we use other things instead of divs to provide better readability and functionality
+>>nav
+>>abbr
+>>header
+>>footer
+>>section
+>>article
+>>details
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+HTML Table:
+	organised way to represent data in form of rows and columns
+	
+	elements:
+		>>table
+		>>td
+		>>tr 
+		>>th
+		>>thead
+		>>tbody
+		>>tfoort
+		>>colgroup
+		>>caption
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SELECTORS:
+
+
+
+Pseudo Elements:
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Boxes :
+	box has, Content Boxes | margin(b/w boxes) | padding and border
+
+	Content Box:
+		width and height	
+
+
+Units:
+	
