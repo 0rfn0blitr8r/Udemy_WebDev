@@ -1,0 +1,14 @@
+body{
+	background-color: black;
+}
+
+section{
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	padding:20% 20% 20% 20%;
+	font-size: 7rem;
+	color: red;
+}
