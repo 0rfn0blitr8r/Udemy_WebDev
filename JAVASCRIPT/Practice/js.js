@@ -52,4 +52,4 @@ let userLastName = prompt("Enter your last name");
 let userAge = prompt("Enter your age");
 let	userName = prompt("Enter your user name");
 let newProfile = new Profile(userFirstName, userLastName, userAge, userName);
-console.log(newProfile.getProfileDetails());
+console.log(newProfile.getProfileDetails());z	

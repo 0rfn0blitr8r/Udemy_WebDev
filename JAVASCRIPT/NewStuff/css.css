@@ -1,0 +1,20 @@
+body{
+	background-color: #665c54;
+	align-items: center;
+	justify-content: center;
+}
+
+div{
+	align-items: center;
+	justify-content: center;
+	width: 66%;
+	height: 66%;
+	border-radius: 10px ;
+	padding: 10%;
+}
+
+h1{
+	font-size: 2rem;
+	font-family:monospace;
+	color: #fbf1c7;
+}
