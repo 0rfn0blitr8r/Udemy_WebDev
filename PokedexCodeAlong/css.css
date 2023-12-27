@@ -1,0 +1,7 @@
+#container .pokemon {
+    display: inline-block;
+    text-align: center;
+}
+#container .pokemon img {
+    display: block;
+}

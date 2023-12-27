@@ -1,0 +1,10 @@
+body{
+	background-color: #282828;
+	color: #fe8019;
+	font-family:monospace;
+}
+input{
+	background-color: #282828;
+	border-color: #fe8019;
+	color : #fe8019  ;
+}
