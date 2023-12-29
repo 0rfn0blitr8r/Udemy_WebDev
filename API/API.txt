@@ -1,0 +1,20 @@
+Requests: 
+	GET: eg: in an api, we pass a url with 'get' request in order to 'get' the json entry
+	POST: data we are sending make/is supposed to make a difference in the api
+			supposed to be processed
+	PUT: update the database | replaces entire resource at the given url with what is provided
+	PATCH: llar to PUT, but just appends tha change
+	HEAD: llar to GET but recieve only getters | used to derive META Info on the resource
+	DELETE: well...
+	OPTIONS: req info about comm option available on the resource 
+
+Status Codes:
+	100-199: Informational
+	200-299: Successful Responses
+	300-399: Redirection Responses
+	400-499: Client Error Responses
+	500-599: Server Error Responses
+
+Query Strings:
+	string is of the type:
+		base-ur; + '?' 'key=val' + '&' ...

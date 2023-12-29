@@ -1,0 +1,57 @@
+body{
+	background-color: #504945;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#p1btn{
+	background-color: #fbf1c7;	
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: #fe8019;
+	text-align: center;
+	justify-content: center;
+	color: #504945;
+	font-size: 25px;
+
+}
+
+#p2btn{
+	background-color: #fbf1c7;	
+	width: 200px;
+	height: 50px;	
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: #fe8019;
+	text-align: center;
+	justify-content: center;
+	color: #504945;
+	font-size: 25px;
+}
+
+#resetbtn{
+	background-color: #fbf1c7;	
+	width: 200px;
+	height: 50px;	
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: #fe8019;
+	text-align: center;
+	justify-content: center;
+	color: #504945;
+	font-size: 25px;
+}
+
+h1{
+	color: #fbf1c7;
+	justify-content: center;
+	align-items: center;
+	padding: 0% 45%;
+}
+
+#buttons{
+	justify-content: center;
+	align-items: center;
+	padding: 0% 20%;
+}
