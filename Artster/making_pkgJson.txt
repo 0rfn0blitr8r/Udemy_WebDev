@@ -1,0 +1,4 @@
+use 'npm init' to start making of a package.json
+
+now whenever a package is installed in the directory, 
+its information will be available in the package.json created

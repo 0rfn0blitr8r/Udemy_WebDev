@@ -1,0 +1,16 @@
+{
+  "name": "app_1",
+  "version": "1.0.0",
+  "description": "First App using ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aru Verma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "colors": "^1.4.0",
+    "figlet": "^1.7.0"
+  }
+}
