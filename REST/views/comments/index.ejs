@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COMMENTS INDEX</title>
+</head>
+<body>
+	<h1>COMMENTS</h1>
+
+	<ul>
+		<% for(post of comments){ %>
+			<li>  <b>  <%= post.username %> </b> : <i>  <%= post.comment %>  </i> </li>
+			<%} %>
+	</ul>
+</body>
+</html>

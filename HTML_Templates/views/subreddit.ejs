@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reddit Templating</title>
+	<link rel="stylesheet" href="/subreddit.css">
+</head>
+<body>
+	<h1>Browsing the Subreddit: <%= name %> </h1>
+	<h2>  <%= description %> </h2>
+	<h2>Subscribers: <%= subscribers %> </h2>
+	<%for(let post of posts){%>
+		<article> <i><%= post.title %> </i> - <b>  <%= post.author %> </b> 
+		<% if(post.img){ %>
+				<img src="<%= post.img %>" alt="">
+			<%}%>
+		</article>
+	<%}%>
+</body>
+</html>
+
+<!-- in <% %> case, where there is no =, we can add any js script 
+which will not be included in rendering of the html(ejs) 
+so, one can add js logic in the file-->
+
+<!-- {
+  name: 'Soccer',
+  subscribers: 800000,
+  description: 'The football subreddit. News, results and discussion about the beautiful game.',
+  posts: [
+    {
+      title: 'Marten de Roon to make pizza for more than 1,000 people in Bergamo if Atalanta win the Champions league.',
+      author: 'joeextreme'
+    },
+    {
+      title: 'Stephan Lichtsteiner has retired from professional football',
+      author: 'odd person'
+    },
+    {
+      title: 'OFFICIAL: Dani Parejo signs for Villareal.',
+      author: 'joeextreme'
+    }
+  ]
+} -->

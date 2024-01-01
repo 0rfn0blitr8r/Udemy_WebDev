@@ -1,0 +1,20 @@
+body{
+	background-color: #1d2021;
+	color: #8ec07c;
+	font-family: monospace;
+	
+}
+
+#subredditName{
+	text-decoration: underline;
+}
+
+img{
+	width:200px;
+}
+
+article{
+	padding: 20px;
+	/* border: 2px; */
+	/* border-radius: 5px; */
+}
