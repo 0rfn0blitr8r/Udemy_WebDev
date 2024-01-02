@@ -10,8 +10,13 @@
 
 	<ul>
 		<% for(post of comments){ %>
-			<li>  <b>  <%= post.username %> </b> : <i>  <%= post.comment %>  </i> </li>
+			<li>  <b>  <%= post.username %> </b> : <i>  <%= post.comment %>  </i>
+				<a href="/comments/<%=post.id%>"> (i) </a>
+			</li>
 			<%} %>
 	</ul>
+
+
+	<a href="/comments/new"> NEW COMMENT?</a>
 </body>
 </html>
