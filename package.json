@@ -3,5 +3,16 @@
     "colors": "^1.4.0",
     "give-me-a-joke": "^0.5.1",
     "latest-version": "^7.0.0"
-  }
+  },
+  "name": "udemy_webdev",
+  "description": "Welcome to my web development journey log! This repository is dedicated to documenting my progress and developments in the field of web development.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
