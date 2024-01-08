@@ -26,6 +26,9 @@ app.use(methodOverride('_method'))
 
 const categories = ['fruit', 'vegetable', 'dairy'];
 
+//function wraps an async function,
+//if anything happens, it catches it 
+//and sends to error handler using next()
 function wrapAsync(fn) {
     return function (req, res, next) {
         fn(req, res, next).catch(e => next(e))
