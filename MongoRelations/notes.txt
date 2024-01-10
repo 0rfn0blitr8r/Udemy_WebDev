@@ -1,0 +1,14 @@
+One to Few
+{
+	name: 'Aru',
+	addresses: [
+		{street: '44', society: 'Jhulelal', apartment: 'A-101'},
+		{street: '44', society: 'Jhulelal', apartment: 'M7/B9'},
+	]
+}
+
+One to many: 
+	farm to product(type/name of product)
+
+one to bajillion:
+	//we can store the reference to user(parent) to a tweet(child)
