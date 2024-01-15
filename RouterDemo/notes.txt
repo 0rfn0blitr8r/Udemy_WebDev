@@ -1,0 +1,4 @@
+Cookies: tiny bits of info stored in user's browser 
+	once cookie is set, user's browser will send the cookie	
+	on every subsequent request to the site
+	//cookies allow use to make HTTP useful

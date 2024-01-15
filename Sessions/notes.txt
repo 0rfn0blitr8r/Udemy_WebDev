@@ -1,0 +1,25 @@
+it ain't practical to store a lot of data client-side using cookies
+this is where sessions comes in
+
+sessions are server-side data store that we use to make HTTP stateful
+instead of storing data using cookies, we store data server-side and 
+give browser a cookie which acts as a key to access data from the server	
+	eg: session-id
+
+default Memory storage setup is MemoryStore
+	which is definitely not deployable
+
+So, we need make a database which can store a complete session 
+	without memory leakage
+
+resave is a val default to be true
+	it makes session's data to be stored(refreshed) even 
+	if it is not modified in a session
+
+saveUninitialized: enables a session to be saved when it is new but not modified
+	choosing val to be false is beneficial in login sessions
+	false also helps in tackling a race condition where user makes multiple
+	parallel requests without a session
+
+flash help to display a key message wich doesn't stay permanentally
+	but helps in visibility of a website
