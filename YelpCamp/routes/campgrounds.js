@@ -32,11 +32,20 @@ router.get('/new', (req, res) => {
 router.get('/:id', catchAsync(async (req, res,) => {
 	let campground = await Campground.findById(req.params.id).populate('reviews')
 	// console.log(campground)
-    res.render('campgrounds/show', { campground });
+    if(!campground){
+		req.flash('error', 'Campground not found')
+		return res.redirect('/campgrounds')
+	}
+	
+	res.render('campgrounds/show', { campground });
 }));
 
 router.get('/:id/edit', catchAsync(async (req, res) => {
 	const campground = await Campground.findById(req.params.id)
+	if(!campground){
+		req.flash('error', 'Campground not found')
+		return res.redirect('/campgrounds')
+	}
     res.render('campgrounds/edit', { campground });
 }))
 
