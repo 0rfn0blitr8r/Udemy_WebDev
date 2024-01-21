@@ -1,33 +1,40 @@
-let mongoose = require('mongoose')
-let cities = require('./cities')
+const mongoose = require('mongoose');
+const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers');
-let Campground = require('../models/campground')
+const Campground = require('../models/campground');
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp')
+mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+});
 
-let db = mongoose.connection
-db.on('error', console.error.bind(console, "Connection Error"))
-db.once('open', ()=>{
-	console.log("Database Connected")
-})
+const db = mongoose.connection;
 
-let sample = array => array[Math.floor(Math.random() * array.length)];
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+    console.log("Database connected");
+});
 
-let seedDb = async()=>{
-	await Campground.deleteMany({});
+const sample = array => array[Math.floor(Math.random() * array.length)];
+
+
+const seedDB = async () => {
+    await Campground.deleteMany({});
     for (let i = 0; i < 50; i++) {
         const random1000 = Math.floor(Math.random() * 1000);
+        const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             image: 'https://source.unsplash.com/collection/483251',
-            description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, sequi temporibus. Doloremque repudiandae impedit ratione harum, corporis excepturi nemo. Veritatis consectetur saepe accusamus fugit corrupti totam incidunt magni eaque harum.',
-            price: Math.floor(Math.random()*50) + 10
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!',
+            price
         })
         await camp.save();
     }
 }
 
-seedDb().then(()=>{
-	mongoose.connection.close()
+seedDB().then(() => {
+    mongoose.connection.close();
 })
