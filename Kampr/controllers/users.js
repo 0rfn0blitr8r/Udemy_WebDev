@@ -31,12 +31,15 @@ module.exports.login = (req, res) => {
     res.redirect(redirectUrl);
 }
 
-module.exports.logout = (req, res, next) => {
-	req.logout(function (err) {
-		if (err) {
-			return next(err);
-		}
-		req.flash('success', 'Logged Out!');
-		res.redirect('/campgrounds');
-	});
+module.exports.logout = (req, res) => {
+    // req.logout();
+    // req.flash('success', "Goodbye!");
+    // res.redirect('/campgrounds');
+    req.logout(function (err) {
+        if (err) {
+            return next(err);
+        }
+        req.flash('success', 'Goodbye!');
+        res.redirect('/campgrounds');
+    });
 }

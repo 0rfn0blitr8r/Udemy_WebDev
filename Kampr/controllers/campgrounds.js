@@ -1,4 +1,4 @@
- const Campground = require('../models/campground');
+const Campground = require('../models/campground');
 const { cloudinary } = require("../cloudinary");
 
 
@@ -49,9 +49,12 @@ module.exports.updateCampground = async (req, res) => {
     const { id } = req.params;
     console.log(req.body);
     const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
+    //map is used to form a list of img
     const imgs = req.files.map(f => ({ url: f.path, filename: f.filename }));
+    //spread is used to make it iterable
     campground.images.push(...imgs);
     await campground.save();
+    //deleting images from cloudinary
     if (req.body.deleteImages) {
         for (let filename of req.body.deleteImages) {
             await cloudinary.uploader.destroy(filename);
