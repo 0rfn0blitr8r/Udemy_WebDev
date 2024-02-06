@@ -1,0 +1,10 @@
+FROM CODESANDBOX DIRECTORY:
+	in index.js, App.js is imported and
+	the id of 'root' is identified as 'rootElement' 
+	from the index.html file
+
+	now this rootElement is created as 'Root' and the stuff in App.js is 
+	rendered into the html file through it.
+
+In writing JSX components, all you have to do is write a 
+js function with name capitalized and return a 'html-esque' stuff
