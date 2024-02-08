@@ -1,5 +1,5 @@
 function Dog() {
-	return <p>Woof Woof!!</p>;
+	return <p> {1 + 3} Woof Woof!!</p>; //returns "4 Woof Woof!!"
 }
   
 export default Dog;

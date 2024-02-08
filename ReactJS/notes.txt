@@ -8,3 +8,18 @@ FROM CODESANDBOX DIRECTORY:
 
 In writing JSX components, all you have to do is write a 
 js function with name capitalized and return a 'html-esque' stuff
+
+------------------------------------------------------------------------------------------------
+
+making Local Apps using Vite and React: 
+	Vite is like 'maven' to a react project | ofc it helps in other frameworks as well
+
+	in a dir, To make a Vite Project: 
+		open dir in terminal & run <npm create vite@latest>
+			then enter the Project name and package name based on the project
+			then enter one of the supported frameworks
+		change dir to that project and run <npm i> to finish installing the remaining dependencies
+
+	To run: <npm run dev>
+
+NOTE: for a ReactJS app, we can also use Create-React-App //create-react-app
